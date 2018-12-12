@@ -1,0 +1,410 @@
+/* Navigation Bar CSS */
+.navbar.navbar-default {
+  background-color: white !important;
+  width: 88%;
+  margin: 0 auto;
+  padding: 30px auto !important;
+  border: none;
+}
+
+.nav.navbar-nav {
+  margin-left: 30px;
+}
+
+.nav.navbar-nav li {
+  margin-left: 30px;
+  background-color: none;
+}
+
+.nav.navbar-nav a {
+  font-family: Roboto !important;
+}
+
+.nav.navbar-nav li :hover {
+  text-decoration: line-through;
+}
+
+.navbar-brand {
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 35px;
+}
+
+.green {
+  color: #0dff85;
+}
+
+/* Carousel Styling */
+#myCarousel {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  top: auto !important;
+  bottom: 20% !important;
+  right: 20% !important;
+  left: auto !important;
+}
+
+.carousel-caption h4 {
+  letter-spacing: 3px;
+  font-family: Roboto;
+  font-size: 30px;
+}
+
+.carousel-caption p {
+  letter-spacing: 3px;
+  font-family: Roboto;
+  font-size: 20px;
+}
+
+.carousel-caption button {
+  background-color: #00bfff;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  font-family: Roboto;
+  box-shadow: 2px 2px white;
+  border: none;
+  border-radius: 3px;
+}
+
+/* Brandlist styling, business icons */
+#brand-list {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.thumbnail {
+  background: none !important;
+  border: none !important;
+}
+
+/* Notes Section that contains message text to visitors on webpage */
+#notes {
+  background-color: #00bfff;
+  text-align: center;
+  font-size: 25px;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  font-family: Roboto;
+}
+
+#mes1 {
+  margin-top: 30px;
+  color: white;
+  word-spacing: 6px;
+}
+
+#mes2 {
+  margin-top: 30px;
+  color: black;
+  word-spacing: 6px;
+}
+
+/* This sectio Styles the Features section in th ewebpage */
+#features {
+  width: 80%;
+  margin-top: 15px;
+  font-family: Roboto !important;
+}
+
+#feature-desc {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: Roboto !important;
+}
+
+#demac hr {
+  width: 20%;
+  border: 1px solid #0dff85;
+}
+
+#row1 {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#row2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tagz {
+  margin-top: 30px;
+}
+
+/* The brief advert section */
+
+#adv {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #80dfff;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#adv h3 {
+  font-family: Roboto;
+  word-spacing: 5px;
+  color: white;
+  letter-spacing: 5px;
+}
+
+#adv h2 {
+  color: white;
+  font-weight: bold;
+  font-family: Roboto;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+}
+
+#adv button {
+  background-color: white;
+  border: none;
+  box-shadow: 2px 2px silver;
+  width: 110px;
+  height: 48px;
+  padding: auto;
+  font-family: Roboto;
+  border-radius: 3px;
+  color: #4d8080;
+  font-family: Roboto;
+  letter-spacing: 3px;
+  font-size: 18px;
+  text-align: centre;
+}
+
+/* Ths Contacy Styling section */
+
+.headzz {
+  font-family: Roboto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #0dff85;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.off {
+  color: white;
+}
+
+#contactzz {
+  text-align: center;
+  width: 90%;
+  background-color: #2b506e;
+}
+
+#linkzz p {
+  line-height: 45px;
+  font-size: 15px;
+  color: white;
+  font-family: Roboto;
+  letter-spacing: 2px;
+}
+
+#linkzz a {
+  color: white;
+  text-decoration: none;
+}
+
+#linkzz a:hover {
+  text-decoration: line-through;
+}
+
+#add-itemzz p {
+  line-height: 40px;
+  color: white;
+  font-size: 18px;
+  font-family: Roboto !important;
+  letter-spacing: 2px;
+}
+
+.sub-contactzz {
+  width: 30%;
+  margin: 10px auto;
+  font-size: 30px;
+  color: #b0c4de;
+}
+
+#copyright {
+  color: white;
+}
+
+/* contact form Styling */
+@import url(https://fonts.googleapis.com/css?family=Lato:100, 300, 400);
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder,
+textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder,
+textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+  color: white;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: white;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder,
+textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+#form {
+  position: relative;
+}
+
+input {
+  font-family: Roboto;
+  font-size: 0.875em;
+  width: 80%;
+  height: 50px;
+  outline: none;
+  color: white;
+  padding-left: 5px;
+  background: white;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 80%;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding-left: 5px;
+
+  outline: none;
+
+  color: white;
+  font-family: Roboto;
+  font-size: 0.875em;
+  background: white;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 30%;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: #4d8080;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #b3aca7;
+  background-color: #0dff85;
+  margin-top: 10px;
+  margin-left: 0;
+  letter-spacing: 2px;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
