@@ -245,7 +245,7 @@
 }
 
 /* contact form Styling */
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url("https://fonts.googleapis.com/css?family=Lato:100, 300, 400");
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
@@ -407,4 +407,112 @@ textarea:hover {
 
 #submit:hover {
   color: #e2dedb;
+}
+
+/*MEDIA QUERIES SECTION */
+
+@media only screen and (max-width: 600px) {
+  .carousel-caption {
+    top: auto !important;
+    bottom: 10% !important;
+    right: 5% !important;
+    left: auto !important;
+  }
+
+  .carousel-caption h4 {
+    font-family: Roboto;
+    letter-spacing: 2px;
+    line-height: 4px;
+    font-size: 10px;
+  }
+
+  .carousel-caption p {
+    letter-spacing: 2px;
+    font-family: Roboto;
+    font-size: 8px;
+    line-height: 2px;
+  }
+
+  .carousel-caption button {
+    background-color: #00bfff;
+    width: 67px;
+    height: 15px;
+    text-align: center;
+    color: white;
+    line-height: 5px;
+    letter-spacing: 1px;
+    font-family: Roboto;
+    box-shadow: 0.5px 0.5px black;
+    border: none;
+    border-radius: 2px;
+    font-size: 8px;
+  }
+
+  .carousel-indicators {
+    display: none !important;
+  }
+
+  #notes {
+    background-color: #00bfff;
+    text-align: center;
+    font-size: 25px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-family: Roboto;
+  }
+
+  #mes1 {
+    margin-top: 20px;
+    color: white;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    line-height: 25px;
+  }
+
+  #mes2 {
+    margin-top: 30px;
+    color: black;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    line-height: 25px;
+  }
+
+  #mes1 p,
+  #mes2 p {
+    margin: 1px;
+  }
+
+  #brand-list .col-xs-3 {
+    float: left;
+    width: 25%;
+    margin: auto;
+  }
+
+  #brand-list .col-xs-3 .thumbnail {
+    height: auto;
+    margin: auto;
+    padding: 30px 10px;
+  }
+
+  #row1 .col-sm-3,
+  #row2 .col-sm-3 {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    float: left;
+    padding: auto;
+    text-align: center;
+  }
+
+  #row1 .col-sm-3 .thumbnail,
+  #row2 .col-sm-3 .thumbnail {
+    height: 70%;
+    width: 90%;
+    padding: 5px 2px;
+  }
+
+  .headzz {
+    margin-bottom: 15px;
+  }
 }
