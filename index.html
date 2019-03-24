@@ -2,29 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Simplifica|Roboto"
-    />
+      rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Source+Sans+Pro"/>
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
       href="Css\style.css"
     />
-    <link
-      rel="stylesheet"
-      href="C:\Users\Adeyinka\Desktop\newsite\css\bootstrap.min.css"
-    />
-    <title>EduStripe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <title>EduStripe</title> 
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
     ></script>
   </head>
-  <body>
+  <body class="container-fluid">
+
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -37,293 +33,431 @@
             <span class="icon-bar"></span> <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Edu<span class="green">Stripe</span></a>
+          <a href="index.html"><div style="height: auto;"><img src="Images\logo2.png" style="height: 80px;"></div></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <!-- <li class="active"><a href="#">Home</a></li> -->
-            <li><a href="#">Product</a></li>
+            <li><a href="product.html">Product</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Company</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#"
-                ><span class="glyphicon glyphicon-user"></span> Sign Up</a
-              >
+              <a href="#login" id="l-in"><button data-toggle="modal" data-target="#loginModal">Log In</button></a>
             </li>
             <li>
-              <a href="#"
-                ><span class="glyphicon glyphicon-log-in"></span> Login</a
-              >
+              <a href="#signup" id="s-up"><button data-toggle="modal" data-target="#signupModal">Sign Up</button></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+      <!--
+      <div id="navbar">
+          <a href="#default" id="logo"><div><img src="Images\logo2.png"></div></a>
+          <div id="navbar-right">
+            <a href="#home" class="active bookmark">Home</a>
+            <a href="#pricing" class="bookmark">Pricing</a>
+            <a href="#about" class="bookmark">About</a>
+            <a href="#login" class="bookmark"><button data-toggle="modal" data-target="#loginModal">LogIn</button></a>
+            <a href="#signup" class="bookmark"><button data-toggle="modal" data-target="#signupModal">SignUp</button></a>
+          </div>
+        </div>
+        -->
+
+        <div class="modal fade" id="loginModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Log In</h4>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <label>Username: </label>
+                  <input type="email" placeholder="Enter Email">
+                  <label>Password: </label>
+                  <input type="password" placeholder="Password">
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="modal fade" id="signupModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Sign Up</h4>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <label>Firstname: </label>
+                  <input name="firstName" type="text" placeholder="Enter Firstname">
+                  <label>Lastname: </label>
+                  <input name="lastName" type="text" placeholder="Lastname">
+                  <label>Username: </label>
+                  <input name="email" type="email" placeholder="Enter Email">
+                  <label>Password: </label>
+                  <input name="password" type="password" placeholder="Create Password">
+                  <label>Retype Password: </label>
+                  <input type="password" placeholder="Retype Password">
+                  <button type="submit">Submit</button>
+                </form>              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+  
+
     <div class="container-fluid">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="Images\img1.jpg" alt="" style="width:100%;" />
-            <div class="carousel-caption">
-              <h4>RUNNING A SCHOOL</h4>
-              <h4>IS HARD</h4>
-              <p>Receiving payments should not be</p>
-              <button>START NOW</button>
-            </div>
+      <div id="top-side" class="row" style="background-image: url('Images/background_Layer.png')">
+        <div class="col-sm-8">
+          <div id="left-side">
+            <h1>
+              The right tools for your school
+            </h1>
+            <p>Edustripe is the future of School management in Africa. We employ cutting edge technology to improve all facets of your school</p>
+            <button data-toggle="modal" data-target="#loginModal">Start now</button>
           </div>
+        </div>
 
-          <div class="item">
-            <img src="Images\img33.jpg" alt="" style="width:100%;" />
-            <div class="carousel-caption">
-              <h4>TRAINING A CHILD</h4>
-              <h4>IS HARD</h4>
-              <p>Paying the fees should not</p>
-              <button>START NOW</button>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="Images\img3.jpg"  style="width:100%;" />
-            <div class="carousel-caption">
-              <h4>PLAN, SAVE AND INVEST</h4>
-              <p>Towards goals that matter</p>
-              <button>START NOW</button>
-            </div>
-          </div>
+        <div class="col-sm-4">
+          <div id="right-side"><img src="Images\main_Image.png"></div>
         </div>
       </div>
     </div>
 
 
     <!-- Brand section of the webpage, business icons -->
-    <div id="brand-list" class="container-fluid">
+    <div id="watch-word" class="container-fluid">
       <div class="row">
-        <div class="col-xs-3">
-          <div class="thumbnail">
-            <img
-              src="Images\brand.png"
-              alt=""
-              style="width:50%; height:80px;"
-            />
-          </div>
+        <div class="col-sm-4">
+          <div id="watchImage">
+          <img src="Images\watchword.png" alt="image">
         </div>
-
-        <div class="col-xs-3">
-          <div class="thumbnail">
-            <img
-              src="Images\brand2.png"
-              alt=""
-              style="width:50%; height:80px;"
-            />
-          </div>
         </div>
-        <div class="col-xs-3">
-          <div class="thumbnail">
-            <img
-              src="Images\brand3.png"
-              alt=""
-              style="width:50%; height:80px;"
-            />
-          </div>
+        <div class="col-sm-8">
+          <div id="watchText">
+          <h3>Our Goal Is To Improve Quality of Education</h3>
+          <p>We provide the right financial and management tools for all stakeholders in education</p>
         </div>
-        <div class="col-xs-3">
-          <div class="thumbnail">
-            <img
-              src="Images\brand4.png"
-              alt=""
-              style="width:50%; height:80px;"
-            />
-          </div>
         </div>
       </div>
     </div>
+
 
     <!-- Notes section, with message to visitors -->
-    <div id="notes" class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6">
-          <div id="mes1">
-            <p>"EduStripe help Parents</p>
-            <p>save towards their</p>
-            <p>childrens educational</p>
-            <p>fees to avoid late payments"</p>
+    <div id="stake" class="container-fluid">
+        <div  class="row">
+          <div class="col-sm-4">
+            <div class="stake-holders">
+            <div class="stakeImage"><img src="Images\school.png" alt="schools"></div>
+            <h3>Schools</h3>
+            <p>We provide Schools with infrastructure through easy access to
+              credit, fees management, smart surveilance, financial analysis
+              and business inteligence to improve management.
+            </p>
+            </div>
           </div>
-        </div>
 
-        <div class="col-sm-6">
-          <div id="mes2">
-            <p>"EduStripe helps</p>
-            <p>Schools and Parents</p>
-            <p>automate educational</p>
-            <p>transactions that matter"</p>
-          </div>
+          <div class="col-sm-4">
+              <div class="stake-holders">
+                <div class="stakeImage"><img src="Images\teacher.png" alt="teacher"></div>
+                <h3>Teachers</h3>
+              <p>We provide Schools welfare programs through easy
+                access to credits, learning analytics and virtual
+                learning to improve quality of education.
+              </p>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="stake-holders">
+                  <div class="stakeImage"><img src="Images\parent.png" alt="parents"></div>
+                  <h3>Parents</h3>
+                <p>Easy way of paying school fees, monitor wards' progress,
+                  access loans and save towards educational goals.
+                </p>
+                </div>
+              </div>
         </div>
-      </div>
     </div>
 
-    <div id="features" class="container">
+    <div id="features" class="container-fluid">
     
       <h3 id="feature-desc">Features That Make The Difference</h3>
       <div id="demac"><hr></div>
-      <br>
       
       <div id="row1">
-
-          <div class="col-sm-3">
-              <div class="thumbnail">
+        <div class="row">
+          <div class="col-xs-4">
+              <div>
                 <img
-                  src="Images\teaching.png"
-                  alt=""
-                  style="width:50%; height:105px;"
+                  src="Images\finance.png"
+                  alt="finance"
                 />
-                <div class="caption">
-                  <p class="tagz">Online</p>
-                  <p>Payments</p>
-                  </div>
                 </div>
               </div>
 
-              <div class="col-sm-3">
-                  <div class="thumbnail">
-                    <img
-                      src="Images\bill.png"
-                      alt=""
-                      style="width:50%; height:105px;"
-                    />
-                    <div class="caption">
-                      <p class="tagz">USSD</p>
-                      <p>Payments</p>
-                      </div>
+              <div class="col-xs-8">
+                  <div>
+                    <h3>Business Intelligence</h3>
+                    <p>Manage your finance more efficiently</p>
                     </div>
-                  </div>
-
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="thumbnail">
-            <img
-              src="Images\checklist.png"
-              alt=""
-              style="width:50%; height:105px;"
-            />
-            <div class="caption">
-              <p class="tagz">Payroll</p>
-              <p>Management</p>
-            </div>
-          </div>
+              </div>
         </div>
-
-        <div class="col-sm-3">
-          <div class="thumbnail">
-            <img
-              src="Images\contract.png"
-              alt=""
-              style="width:50%; height:105px;"
-            />
-            <div class="caption">
-              <p class="tagz">Fees</p>
-              <p>Management</p>
-            </div>
-          </div>
         </div>
-
-        
-        
-
-  
-
-    <hr>
+    
     <div id="row2">
-    <div class="row">
-        
-        <div class="col-sm-3">
-          <div class="thumbnail">
-            <img
-              src="Images\network.png"
-              alt=""
-              style="width:50%; height:105px;"
-            />
-            <div class="caption">
-              <p class="tagz">Agents</p>
-              <p>Network</p>
-            </div>
-          </div>
-        </div>
+      <div class="row">
+      <div class="col-xs-8">
+        <h3>Payroll Manager</h3>
+        <p>Simpler way to manage stuff wages and salaries</p>
+      </div>
 
-        
-        <div class="col-sm-3" id="last-row">
-            <div class="thumbnail">
-              <img
-                src="Images\debt.png"
-                alt=""
-                style="width:50%; height:105px;"
-              />
-              <div class="caption">
-                <p class="tagz">Expenses</p>
-                <p>Management</p>
-              </div>
-            </div>
-          </div>
+        <div class="col-xs-4">
+          <img src="Images\payroll.png" alt="">
+        </div>
         </div>
       </div>
 
-        
-
-          <div class="col-sm-3">
-            <div class="thumbnail">
-              <img
-                src="Images\hand-shake.png"
-                alt=""
-                style="width:50%; height:105px;"
-              />
-              <div class="caption">
-                <p class="tagz">Cooperatives</p>
-                
-              </div>
-            </div>
+      <div id="row1">
+          <div class="row">
+            <div class="col-xs-4">
+                <div>
+                  <img
+                    src="Images\customized.png"
+                    alt="customized"
+                  />
+                  </div>
+                </div>
+  
+                <div class="col-xs-8">
+                    <div>
+                      <h3>Customized Learning</h3>
+                      <p>Create custom lesson notes, better assessments, special learning and career prediction</p>
+                      </div>
+                </div>
+          </div>
           </div>
 
-        <div class="col-sm-3" id="last-row">
-          <div class="thumbnail">
-            <img
-              src="Images\loan.png"
-              alt=""
-              style="width:50%; height:105px;"
-            />
-            <div class="caption">
-              <p class="tagz">Loans</p>
+          <div id="row2">
+              <div class="row">
+              <div class="col-xs-8">
+                <h3>Virtual Learning</h3>
+                <p>Virtual school tours/excursions, Virtual learning</p>
+              </div>
+        
+                <div class="col-xs-4">
+                  <img src="Images\virtual.png" alt="">
+                </div>
+                </div>
+              </div>
+
+              <div id="row1">
+                  <div class="row">
+                    <div class="col-xs-4">
+                        <div>
+                          <img
+                            src="Images\learning.png"
+                            alt=""
+                          />
+                          </div>
+                        </div>
+          
+                        <div class="col-xs-8">
+                            <div>
+                              <h3>Learning Analytics</h3>
+                              <p>Group pupils/students and teachers, identify weak pupils/students</p>
+                              </div>
+                        </div>
+                  </div>
+                  </div>
               
-            </div>
-          </div>
+              <div id="row2">
+                <div class="row">
+                <div class="col-xs-8">
+                  <h3>CoBanking By Riby<br><p style="font-size: 13px;">(Loans, Savings and Cooperative Banking)</p></h3>
+                  <p>Access credit for welfare and infruastructural needs</p>
+                </div>
+          
+                  <div class="col-xs-4">
+                    <img src="Images\cobanking.png" alt="">
+                  </div>
+                  </div>
+                </div>
+          
+                <div id="row1">
+                    <div class="row">
+                      <div class="col-xs-4">
+                          <div>
+                            <img
+                              src="Images\smart.png"
+                              alt=""
+                            />
+                            </div>
+                          </div>
+            
+                          <div class="col-xs-8">
+                              <div>
+                                <h3>Smart Suveillance</h3>
+                                <p>Smart surveillance at your school, identity verification with Artificial Intelligence</p>
+                                </div>
+                          </div>
+                    </div>
+                    </div>
+          
+                    <div id="row2">
+                        <div class="row">
+                        <div class="col-xs-8">
+                          <h3>Visitor Management By Identity</h3>
+                          <p>Manage parents visiting day better, communicate with parents more effectively</p>
+                        </div>
+                  
+                          <div class="col-xs-4">
+                            <img src="Images\visitor.png" alt="">
+                          </div>
+                          </div>
+                        </div>
+
+  </div>
+
+  <div id="why" class="container-fluid">
+      <h3 id="feature-desc2">Why Edustripe?</h3>
+      <br>
+    <div id="why1" class="row">
+      <div class="col-sm-4">
+        <div class="whyImage">
+          <img src="Images\icon1.png">
         </div>
+        <h4>Financial and Credit Ananlysis</h4>
+        <p>We help you view your school’s
+            financial performance and a more
+            reliable loan approval process for
+            lenders</p>
       </div>
-      </div>
+
+      <div class="col-sm-4">
+          <div class="whyImage">
+            <img src="Images\icon2.png">
+          </div>
+          <h4>Boost Enrollment</h4>
+          <p>We leverage on our partnership
+              with <a href="http://www.edusko.com" target="_blank">Edusko.com</a> to help school
+              owners boost enrollment and
+              promote their school brands</p>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="whyImage">
+              <img src="Images\icon3.png">
+            </div>
+            <h4>Convenience for Parents</h4>
+            <p>Stress free way for parents to pay
+                school fees and easy access to low
+                interest loans for fees payments.
+                We help parents save towards
+                Educational goals</p>
+          </div>
     </div>
 
-    <!-- The brief advert section -->
+    <div class="row">
+      <div id="why2" class="col-sm-6">
+          <div class="whyImage">
+              <img src="Images\icon4.png">
+            </div>
+            <h4>Timely Fees Collection</h4>
+            <p>Our features for parents ensure
+                that school owners collect up to
+                90% of their revenue within the
+                first 4 weeks of resumption in an
+                academic term</p>
+      </div>
 
-      <div id="adv" class="container-fluid">
-        <h3>Go Live</h3>
-        <br>
-        <h2>MAKE OR RECEIVE SCHOOL PAYMENTS</h2>
-        <br>
-        <button>SIGN UP</button>
+      <div class="col-sm-6">
+          <div class="whyImage">
+              <img src="Images\icon5.png">
+            </div>
+            <h4>Financial and Credit Ananlysis</h4>
+            <p>Shorter due diligence and
+                financial assessment process due
+                to verifiable customer data and
+                better management of data</p>
+      </div>
+
+
+    </div>
+<br>
+  <button id="whyButt" data-toggle="modal" data-target="#loginModal">Try Now</button>
+
+  </div>
+  <br>
+
+    <!-- The Media and partners section -->
+
+    <div id="brand-list" class="container-fluid">
+        <h3 id="feature-desc2">Media and Partners</h3>
+        <div id="demac"><hr></div>
+        <div class="row">
+          <div class="col-xs-3">
+            
+              <img
+                src="Images\remita.png"
+                alt=""
+                
+              />
+            
+          </div>
+  
+          <div class="col-xs-3">
+            
+              <img
+                src="Images\paga.png"
+                alt=""
+                
+              />
+            
+          </div>
+          <div class="col-xs-3">
+            
+              <img
+                src="Images\next.png"
+                alt=""
+                
+              />
+            
+          </div>
+          <div class="col-xs-3">
+            
+              <img
+                src="Images\businessday.png"
+                alt=""
+                
+              />
+            
+          </div>
+        </div>
       </div>
 
       <div id="contactzz" class="container-fluid">
         <div class="row">
           <div class="col-sm-4">
-            <h3 class="headzz">CONTACT FORM</h3>
+            <h3 class="headzz">Contact Us</h3>
             <form id="form" class="topBefore">
               <input id="name" type="text" placeholder="NAME">
               <input id="email" type="text" placeholder="E-MAIL">
@@ -333,7 +467,7 @@
           </div>
 
           <div class="col-sm-4">
-            <h3 class="headzz">LINKS</h3>
+            <h3 class="headzz">Links</h3>
             <div id="linkzz">
             <P><a href="#">Product</P></a>
             <P><a href="#">Pricing</a></P>
@@ -344,17 +478,19 @@
           <div class="col-sm-4">
             <h3 class="headzz">Edu<span class="off">Stripe</span></h3>
             <div id="add-itemzz">
-            <p><i class="fas fa-map-marker-alt"></i><b> Address:</b> edustripe.com</p>
-            <p><i class="fas fa-phone"></i><b> Phone:</b> +234 808 2356 787</p>
-            <p><i class="fas fa-at"></i> <b> Email:</b> info@edustripe.com</p> 
+            <p><i class="fas fa-map-marker-alt"></i> Airport Road, Ikeja</p>
+            <p><i class="fas fa-phone"></i> +2348025129751</p>
+            <p><i class="fas fa-at"></i> info@edustripe.com</p> 
           </div>
           <div class="sub-contactzz">
             <div class="row">
               <div class="col-xs-4">
-                <i class="fab fa-facebook"></i>
+                  <a href="https://www.instagram.com/edustripe" target="_blank">
+                <i class="fab fa-instagram"></i></a>
               </div>
               <div class="col-xs-4">
-                <i class="fab fa-instagram"></i>
+                  <a href="https://www.twitter.com/edustripe" target="_blank">
+                <i class="fab fa-twitter"></i></a>
               </div>
               <div class="col-xs-4">
                 <i class="fab fa-linkedin"></i>
@@ -365,11 +501,16 @@
         </div>
         <br>
         <hr>
-        <p id="copyright">copyright &copy; 2018 Edustripe.com. All rights reserved.</p>
+        <p id="copyright">Copyright &copy; 2019 Edustripe Technologies All rights reserved.</p>
       </div>
 
   </body>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="JS\edu.js"></script>
 
-  <script src="C:\Users\Adeyinka\Desktop\newsite\js\jquery.min.js"></script>
-  <script src="C:\Users\Adeyinka\Desktop\newsite\js\bootstrap.min.js"></script>
+
+
 </html>
