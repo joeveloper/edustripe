@@ -246,6 +246,11 @@ body {
   border-radius: 50%;
   background-color: #00bfff;
   margin-top: 10px;
+  padding-top: 10px;
+}
+
+.stakeImage#stk01 {
+  padding-top: 10px;
 }
 
 .stake-holders img {
@@ -703,7 +708,7 @@ textarea:hover {
     line-height: 22px;
     width: 100%;
     word-spacing: 3px;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   #left-side button {
@@ -770,6 +775,14 @@ textarea:hover {
 
   .stake-holders p {
     word-spacing: 2px;
+  }
+
+  .stakeImage {
+    padding-top: 15px;
+  }
+
+  .stakeImage#stk01 {
+    padding-top: 20px;
   }
 
   .stake-holders img {

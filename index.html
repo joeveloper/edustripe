@@ -166,7 +166,7 @@
         <div  class="row">
           <div class="col-sm-4">
             <div class="stake-holders">
-            <div class="stakeImage"><img src="Images\school.png" alt="schools"></div>
+            <div class="stakeImage" id="stk01"><img src="Images\school.png" alt="schools"></div>
             <h3>Schools</h3>
             <p>We provide Schools with infrastructure through easy access to
               credit, fees management, smart surveilance, financial analysis
@@ -458,10 +458,10 @@
         <div class="row">
           <div class="col-sm-4">
             <h3 class="headzz">Contact Us</h3>
-            <form id="form" class="topBefore">
+            <form action="https://formspree.io/info@edustripe.com" method="POST" id="form" class="topBefore">
               <input id="name" type="text" placeholder="NAME">
               <input id="email" type="text" placeholder="E-MAIL">
-              <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+              <textarea name="message" id="message" type="text" placeholder="MESSAGE"></textarea>
           <input id="submit" type="submit" value="Submit">     
         </form>
           </div>
