@@ -31,19 +31,4 @@ for (let i = 0; i < bookMarks.length; i++) {
 
 */
 
-window.onscroll = () => {
-  scrollFunction();
-};
 
-const scrollFunction = () => {
-  var row1 = document.getElementById("row1");
-  var row2 = document.getElementById("row2");
-
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    row1.style.width = "70%";
-    row2.style.width = "70%";
-  } else {
-    row1.style.width = "50%";
-    row2.style.width = "50%";
-  }
-};

@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Simplifica|Roboto"
-    />
+      rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Source+Sans+Pro"/>
     <link
       rel="stylesheet"
       type="text/css"
@@ -18,44 +16,44 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
-    <title>EduStripe</title>
+    <title>Product|EduStripe</title>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
     ></script>
   </head>
   <body>
-      <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button
-                type="button"
-                class="navbar-toggle"
-                data-toggle="collapse"
-                data-target="#myNavbar"
-              >
-                <span class="icon-bar"></span> <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a href="index.html"><div style="height: auto;"><img src="Images\logo2.png" style="height: 80px;"></div></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav">
-                <li><a href="product.html">Product</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Company</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <a href="#login" class="bookmark"><button data-toggle="modal" data-target="#loginModal">LogIn</button></a>
-                </li>
-                <li>
-                  <a href="#signup" class="bookmark"><button data-toggle="modal" data-target="#signupModal">SignUp</button></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html"><div style="height: auto;"><img src="Images\logo2.png" style="height: 80px;"></div></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="product.html">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="company.html">Company</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#login" id="l-in"><button data-toggle="modal" data-target="#loginModal">Log In</button></a>
+            </li>
+            <li>
+              <a href="#signup" id="s-up"><button data-toggle="modal" data-target="#signupModal">Sign Up</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     
           <!--
           <div id="navbar">
@@ -140,4 +138,11 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="JS\edu.js"></script>
+  <script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+<script>
+  var myLandbotLivechat = new LandbotLivechat({
+    index: 'https://landbot.io/u/H-153526-06R3MN3W7NBDJ5QP/index.html',
+  });
+</script>
 </html>

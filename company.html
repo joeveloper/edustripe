@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Source+Sans+Pro"/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="Css\style.css"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <title>Company|EduStripe</title> 
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
+  </head>
+  <body id="company-body" class="container-fluid">
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html"><div style="height: auto;"><img src="Images\logo2.png" style="height: 80px;"></div></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="product.html">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="company.html">Company</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#login" id="l-in"><button data-toggle="modal" data-target="#loginModal">Log In</button></a>
+            </li>
+            <li>
+              <a href="#signup" id="s-up"><button data-toggle="modal" data-target="#signupModal">Sign Up</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <!--
+      <div id="navbar">
+          <a href="#default" id="logo"><div><img src="Images\logo2.png"></div></a>
+          <div id="navbar-right">
+            <a href="#home" class="active bookmark">Home</a>
+            <a href="#pricing" class="bookmark">Pricing</a>
+            <a href="#about" class="bookmark">About</a>
+            <a href="#login" class="bookmark"><button data-toggle="modal" data-target="#loginModal">LogIn</button></a>
+            <a href="#signup" class="bookmark"><button data-toggle="modal" data-target="#signupModal">SignUp</button></a>
+          </div>
+        </div>
+        -->
+
+        <div class="modal fade" id="loginModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div id="login-modal-body" class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Log In</h3>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <input type="email" placeholder="Enter Email">
+                  <input type="password" placeholder="Password">
+                  <p><button class="mod-butt" type="submit">Submit</button></p>
+                  <p>Don't have an account? <a id="black" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign Up</a></p>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="modal fade" id="signupModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Sign Up</h3>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <input name="firstName" type="text" placeholder="Enter Firstname">
+                  <input name="lastName" type="text" placeholder="Lastname">
+                  <input name="email" type="email" placeholder="Enter Email">
+                  <input name="password" type="password" placeholder="Create Password">
+                  <input type="password" placeholder="Retype Password">
+                  <p><button class="mod-butt" type="submit">Submit</button></p>
+                </form>              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div id="feature-desc">
+            <h1>We are championing a new narrative for all stakeholders in Education</h1>
+          </div>
+
+          <div id="company-text">
+            <p>
+              Our mission is to provide the right tools to improve quality of education through smart application of tecnhnology towards Educational needs.
+            </p>
+          </div>
+        </div>
+  
+
+    
+
+  </body>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="JS\edu.js"></script>
+  <script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+<script>
+  var myLandbotLivechat = new LandbotLivechat({
+    index: 'https://landbot.io/u/H-153526-06R3MN3W7NBDJ5QP/index.html',
+  });
+</script>
+
+
+
+</html>

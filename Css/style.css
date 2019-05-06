@@ -86,7 +86,7 @@ body {
   color: #27436e;
   font-style: normal;
   font-weight: 200;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .nav.navbar-nav li :hover {
@@ -106,6 +106,7 @@ body {
   width: 102px;
   height: 36px;
   text-decoration: none;
+  font-size: 20px;
 }
 
 #s-up button {
@@ -116,6 +117,7 @@ body {
   width: 102px;
   height: 37px;
   text-decoration: none;
+  font-size: 20px;
 }
 
 /* TOPSIDE STYLING */
@@ -221,6 +223,7 @@ body {
   color: #545b6f;
   background-color: #fff;
   border-top: 30px solid #00bfff;
+  border-radius: 5px;
   box-shadow: 0px 10px 20px rgba(0, 172, 237, 0.2);
 }
 
@@ -399,11 +402,10 @@ body {
 #whyButt {
   width: 120px;
   height: 40px;
-  background: #00aced;
+  background: #00bfff;
   color: #fff;
   border-radius: 3px;
   border: none;
-  box-shadow: 1px 1px 1px #00aced;
 }
 
 /* THE CONTACT SECTION STYLING */
@@ -498,10 +500,11 @@ input::placeholder,
 textarea::placeholder {
   color: #aca49c;
   font-size: 0.875em;
+  font-family: "Open Sans";
 }
 
 input:focus::placeholder,
-textarea::focus:placeholder {
+textarea::focus::placeholder {
   color: #bbb5af;
 }
 
@@ -544,6 +547,7 @@ input:hover::placeholder,
 textarea:hover::placeholder {
   color: #e2dedb;
   font-size: 0.875em;
+  font-family: "Open Sans";
 }
 
 input:hover:focus::placeholder,
@@ -567,7 +571,7 @@ textarea:hover::focus:-ms-placeholder {
 }
 
 input {
-  font-family: Roboto;
+  font-family: "Open Sans";
   font-size: 0.875em;
   width: 80%;
   height: 50px;
@@ -585,8 +589,8 @@ input {
 }
 
 input:hover {
-  background: #b3aca7;
-  color: #e2dedb;
+  background: #fff;
+  color: #000;
 }
 
 textarea {
@@ -598,10 +602,10 @@ textarea {
 
   outline: none;
 
-  color: white;
-  font-family: Roboto;
+  color: #000;
+  font-family: "Open Sans";
   font-size: 0.875em;
-  background: white;
+  background: #fff;
   border-left: 3px solid white;
   border-bottom: 3px solid white;
 
@@ -612,13 +616,13 @@ textarea {
 }
 
 textarea:hover {
-  background: #b3aca7;
-  color: #e2dedb;
+  background: #fff;
+  color: #000;
 }
 
 #submit {
   width: 30%;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans";
   font-size: 18px;
   color: #4d8080;
   outline: none;
@@ -651,6 +655,80 @@ textarea:hover {
   color: #000;
 }
 
+/* MODAL STYLING */
+.modal-content {
+  background: transparent !important;
+  font-family: "Open Sans";
+  text-align: center;
+  color: #fff;
+  opacity: 1;
+}
+
+.modal-content label {
+  margin-top: 10px;
+}
+
+.modal-content input {
+  background-color: #fff;
+  color: #000;
+  font-family: "Open Sans";
+}
+
+.modal-body form {
+  text-align: center;
+  background: #3c8bff;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.modal-body form input:hover::placeholder {
+  color: #000;
+  font-weight: bold;
+}
+
+.modal-body input {
+  border-radius: 7px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 80%;
+  border: none;
+}
+
+.modal-body .mod-butt {
+  background-color: #00aced;
+  border: none;
+  border-radius: 5px;
+  width: 130px;
+  height: 40px;
+  font-size: 22px;
+  color: #fff;
+}
+
+#black {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-footer {
+  border-top: none !important;
+}
+
+.modal-title {
+  color: #fff;
+}
+
+/* COMPANY PAGE STYLING */
+body#company-body {
+  background: #3c8bff !important;
+}
+
 /*MEDIA QUERIES SECTION */
 
 @media only screen and (max-width: 600px) {
@@ -668,19 +746,14 @@ textarea:hover {
     border: none;
   }
 
-  .collapse.navbar-collapse {
-    text-align: center !important;
-    background-color: #545b6f;
-    padding-right: 5px;
+  nav.navbar-nav li {
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: none;
   }
 
-  .collapse.navbar-collapse ul {
-    margin-right: 33px;
-    color: #fff !important;
-  }
-
-  .collapse.navbar-collapse a {
-    color: #fff !important;
+  .navbar-collapse.in {
+    border-top: none;
   }
 
   /* TOP SIDE */
@@ -764,7 +837,7 @@ textarea:hover {
   /* STAKE HOLDERS */
   .stake-holders {
     margin-bottom: 15px;
-    height: auto;
+    height: 373px;
     width: 100%;
     padding-bottom: 30px;
   }
